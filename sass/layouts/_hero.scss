@@ -1,0 +1,40 @@
+.hero {
+  margin-top: 60px;
+  .hero-title {
+    font-size: 15px;
+      text-align: center;
+      color:#0e3d6b;
+      text-transform: uppercase;
+  }
+  .hero-text {
+    text-align: center;
+    font-size: 12px;
+    color:#0e3d6b;
+  }
+}
+
+@media (min-width:768px) {
+  .container {
+    max-width: 768px;
+  }
+  .hero {
+    .hero-title {
+      font-size: 20px;
+      text-align: left;
+    }
+    .hero-text {
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width:1200px) {
+  .hero {
+    .hero-title {
+      font-size: 25px;
+    }
+    .hero-text {
+      font-size: 18px;
+    }
+  }
+}

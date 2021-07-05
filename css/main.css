@@ -1,0 +1,758 @@
+@charset "UTF-8";
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/**
+1. Исправьте высоту строки во всех браузерах.
+2. Предотвратить корректировку размера шрифта после изменения ориентации в iOS.
+3. Используйте табуляцию более удобочитаемого размера (упрямая).
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  tab-size: 4;
+  /* 3 */
+}
+
+/*
+Sections
+========
+*/
+/**
+1. Уберите маржу во всех браузерах.
+2. Улучшите согласованность шрифтов по умолчанию во всех браузерах. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  margin: 0;
+  /* 1 */
+  padding: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  /* 2 */
+}
+
+/*
+Группировка контента
+================
+*/
+/**
+1. Добавьте правильную высоту в Firefox.
+2. Исправьте наследование цвета границы в Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+}
+
+/*
+Семантика на уровне текста
+====================
+*/
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+Добавьте правильное оформление текста в Chrome, Edge и Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Добавьте правильный вес шрифта в Edge и Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Улучшите согласованность шрифтов по умолчанию во всех браузерах. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Исправьте размер шрифта odd 'em' во всех браузерах.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Добавьте правильный размер шрифта во всех браузерах.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Предотвратить влияние элементов sub и sup на высоту строки во всех браузерах.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Табличные данные
+============
+*/
+/**
+1. Удалите отступ текста из содержимого таблицы в Chrome и Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Правильное наследование цвета границ таблицы во всех Chrome и Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+}
+
+/*
+Формы
+=====
+*/
+/**
+1. Измените стили шрифтов во всех браузерах.
+2. Удалите поля в Firefox и Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Удалите наследование текстового преобразования в Edge и Firefox.
+*/
+button,
+select {
+  text-transform: none;
+  border: none;
+  cursor: pointer;
+}
+
+/**
+Исправлена ​​невозможность стилизации интерактивных типов в iOS и Safari.
+*/
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+Удалите внутреннюю границу и отступ в Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Восстановите стили фокуса, не установленные предыдущим правилом.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Удалите дополнительные стили ': invalid' в Firefox.
+См. Https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Удалите отступы, чтобы разработчики не были пойманы, когда они обнуляют элементы fieldset во всех браузерах.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Добавьте правильное вертикальное выравнивание в Chrome и Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Исправьте стиль курсора кнопок увеличения и уменьшения в Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Исправьте странный вид в Chrome и Safari.
+2. Исправьте стиль контура в Safari.
+*/
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Удалите внутреннюю прокладку в Chrome и Safari на macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Исправьте невозможность стилизации интерактивных типов в iOS и Safari.
+2. Измените свойства шрифта на «наследование» в Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Интерактивный
+==========
+
+*/
+/*
+Добавьте правильный дисплей в Chrome и Safari.
+*/
+summary {
+  display: list-item;
+}
+
+body {
+  background-color: #ffffff;
+  color: #0e3d6b;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+@media (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 55px;
+  }
+}
+
+/* Utilites */
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.page-header {
+  background-color: #ffffff;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Main nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.header-studio {
+  color: #000000;
+}
+
+.logo {
+  margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/* Menu nav */
+.menu-nav {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+
+.menu-nav > .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-nav .link {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: #212121;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-nav.current {
+  color: #2196f3;
+}
+
+.link.current::after {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+}
+
+.menu-nav .link,
+.contacts-nav .link {
+  font-style: medium;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.menu-nav .link:hover,
+.contacts-nav .link:hover {
+  color: #e6983a;
+}
+
+/* Contacts nav */
+.contacts-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.contacts-nav .link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  fill: #757575;
+  color: #757575;
+}
+
+.contacts-nav .item + .item {
+  margin-left: 50px;
+}
+
+.contacts-icon {
+  margin-right: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-nav .link:hover, .contacts-nav .link:focus,
+.contacts-nav .link:hover .contacts-icon,
+.contacts-nav .link:focus .contacts-icon {
+  color: #2196f3;
+  fill: #2196f3;
+}
+
+.page-header.portfolio {
+  border-bottom: 1px solid #ececec;
+}
+
+.menu-open {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background: transparent;
+}
+
+.mobile-nav {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  width: 100vw;
+  height: 117vh;
+  z-index: 55;
+}
+
+.mobile-nav .container {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.mobile-nav .menu-close {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  background: transparent;
+}
+
+.mobile-menu_list {
+  text-align: center;
+}
+
+.mobile-menu__item {
+  margin-bottom: 16px;
+}
+
+.lang-web {
+  background: transparent;
+  text-transform: uppercase;
+  color: #6793bc;
+  font-weight: bold;
+}
+
+.mobile-menu__link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #0e3d6b;
+  text-transform: uppercase;
+}
+
+.mobile-media {
+  display: flex;
+}
+
+.mobile-nav.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-nav .list {
+  display: none;
+}
+
+.lang-row {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+@media (min-width: 480px) {
+  .menu-open {
+    position: absolute;
+    right: 45px;
+    top: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+  }
+  .menu-nav .list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu-nav .list .item {
+    margin-right: 18px;
+  }
+  .menu-nav .list .link {
+    text-transform: uppercase;
+    color: #6793bc;
+  }
+  .menu-nav .list .number {
+    color: #0e3d6b;
+  }
+  .menu-open {
+    display: none;
+  }
+}
+
+.hero {
+  margin-top: 60px;
+}
+
+.hero .hero-title {
+  font-size: 15px;
+  text-align: center;
+  color: #0e3d6b;
+  text-transform: uppercase;
+}
+
+.hero .hero-text {
+  text-align: center;
+  font-size: 12px;
+  color: #0e3d6b;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .hero .hero-title {
+    font-size: 20px;
+    text-align: left;
+  }
+  .hero .hero-text {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero .hero-title {
+    font-size: 25px;
+  }
+  .hero .hero-text {
+    font-size: 18px;
+  }
+}
+
+.product {
+  margin-top: 30px;
+}
+
+.product .product-list {
+  margin-bottom: 35px;
+}
+
+.product .section-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 15px;
+  color: #0e3d6b;
+  text-transform: uppercase;
+}
+
+.product .product-img {
+  margin: 0 auto;
+}
+
+.product .produc-block {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.product .product-block-title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.product .product-block-title::before {
+  content: '';
+  position: absolute;
+  width: 140px;
+  background-color: red;
+  border-radius: 2px;
+  height: 5px;
+  margin: 35px 0 0 20px;
+}
+
+.product .product-text {
+  margin-bottom: 20px;
+}
+
+.product .product-info {
+  color: #ffffff;
+  background-color: #ff8500;
+  padding: 8px 24px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 25px;
+  }
+  .produc-block {
+    padding: 10px 15px;
+    margin: 0;
+  }
+  .product {
+    display: flex;
+  }
+  .product-list {
+    margin: 0 10px 35px 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 55px;
+  }
+  .product {
+    display: flex;
+  }
+  .product .produc-block {
+    padding: 10px 50px;
+  }
+  .product-text {
+    font-size: 18px;
+  }
+}
+
+.banner {
+  background-image: url(/images/fon-min.jpg);
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  text-align: center;
+}
+
+.banner .banner-logo {
+  margin: 0 auto;
+}
+
+.banner .banner-title {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.banner .banner-item {
+  margin-bottom: 20px;
+}
+
+.banner .banner-item:nth-child(3) {
+  margin: 0;
+}
+
+.banner .block-text {
+  text-transform: uppercase;
+  color: #0e3d6b;
+  font-weight: bold;
+}
+
+.banner .text-hover {
+  color: #ff8500;
+}
+
+.banner .text-bold-nan {
+  font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 55px;
+  }
+  .banner-list {
+    display: flex;
+    justify-content: space-around;
+  }
+  .banner-block {
+    padding: 0 10px;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
