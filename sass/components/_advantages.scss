@@ -1,0 +1,25 @@
+.advantages-item {
+    display: flex;
+    align-items:center;
+    margin-bottom: 7px;
+}
+
+
+.advantages-text {
+    max-width: 310px;
+    font-size: 16px;
+    color: rgb(14, 61, 107);
+    text-align: left;
+    margin-left: 11px;
+  }
+
+  .indent {
+      margin-bottom: 18px;
+  }
+  
+@media (min-width:1200px) {
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+}

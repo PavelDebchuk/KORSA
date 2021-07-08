@@ -2,11 +2,11 @@ body {
   background-color: $primary-white-color;
   color:#0e3d6b;;
 
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto';
   font-weight: 400;
   letter-spacing: 0.03em;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.087;;
 }
 
 .container {
@@ -27,7 +27,7 @@ body {
   @media (min-width:1200px) {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 55px;
+    padding: 0 58px;
   }
 }
 
@@ -48,6 +48,10 @@ h3 {
 img {
   display: block;
 
+}
+
+label {
+  display: block;
 }
 
 .visually-hidden {

@@ -290,11 +290,11 @@ summary {
 body {
   background-color: #ffffff;
   color: #0e3d6b;
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto';
   font-weight: 400;
   letter-spacing: 0.03em;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.087;
 }
 
 .container {
@@ -323,7 +323,7 @@ body {
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 55px;
+    padding: 0 58px;
   }
 }
 
@@ -342,6 +342,10 @@ h3 {
 }
 
 img {
+  display: block;
+}
+
+label {
   display: block;
 }
 
@@ -707,6 +711,7 @@ img {
   height: 100%;
   padding: 25px;
   text-align: center;
+  margin-bottom: 46px;
 }
 
 .banner .banner-logo {
@@ -754,5 +759,251 @@ img {
     padding: 0 10px;
     margin: 0;
   }
+}
+
+.window-title {
+  font-size: 24px;
+  font-family: "Calibri";
+  color: #0e3d6b;
+  text-transform: uppercase;
+  line-height: 0.725;
+  margin-bottom: 42px;
+}
+
+.window-item {
+  position: relative;
+}
+
+.window-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.window-block {
+  font-size: 16px;
+  text-align: center;
+}
+
+.window-text {
+  font-family: "Calibri";
+  color: #0e3d6b;
+  line-height: 1.087;
+  text-align: left;
+  margin-bottom: 80px;
+}
+
+.block-title {
+  font-family: "Myriad Pro";
+  color: #044d91;
+  text-decoration: underline;
+  line-height: 1.087;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.disconts {
+  font-family: "Calibri";
+  color: #666262;
+  line-height: 1.087;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.line-silver {
+  text-decoration: line-through #bb3545;
+  font-weight: bold;
+}
+
+.span-orang {
+  color: #ff8500;
+  font-weight: bold;
+  font-size: 36px;
+  font-family: "Calibri";
+}
+
+.span-blue {
+  color: #0e3d6b;
+  font-weight: bold;
+}
+
+.button-order {
+  font-size: 16px;
+  font-family: "KelsonSans";
+  color: white;
+  text-transform: uppercase;
+  background: #4bbe3f;
+  padding: 10px 42px;
+  margin-bottom: 70px;
+}
+
+.block-econom {
+  border-radius: 10px;
+  background-color: red;
+  position: absolute;
+  font-size: 14px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  color: white;
+  line-height: 1.242;
+  text-align: center;
+  left: 75px;
+  top: -48px;
+}
+
+.span-bold {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .window-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .window-block {
+    max-width: 222px;
+  }
+  .block-econom {
+    left: -10px;
+  }
+  .button-order {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .block-econom {
+    left: -42px;
+  }
+  .bot {
+    margin-bottom: 3px;
+  }
+}
+
+.advantages-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.advantages-text {
+  max-width: 310px;
+  font-size: 16px;
+  font-family: "Calibri";
+  color: #0e3d6b;
+  text-align: left;
+  margin-left: 11px;
+}
+
+.indent {
+  margin-bottom: 18px;
+}
+
+@media (min-width: 1200px) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.block-form {
+  background-image: url(/images/fon-min.jpg);
+  width: 100%;
+  height: 100%;
+  padding: 43px 0 46px 0;
+  text-align: center;
+  margin-top: 64px;
+}
+
+.block-form .block-form-title {
+  font-size: 20px;
+  font-family: "System";
+  color: #212434;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form-text {
+  margin-top: 30px;
+  max-width: 990px;
+  font-size: 18px;
+  font-family: "System";
+  color: #212434;
+  font-weight: bold;
+  line-height: 1.333;
+  letter-spacing: 1.8;
+}
+
+.label {
+  margin-top: 20px;
+}
+
+.form {
+  margin-top: 33px;
+}
+
+.form .input-style {
+  max-width: 210px;
+  height: 36px;
+  border: 1px solid #d0d0d0;
+  color: #d0d0d0;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.form .label-form {
+  margin-left: 0;
+}
+
+.form .form-button {
+  padding: 0 50px;
+  border-radius: 7px;
+  font-size: 18px;
+  font-family: "Myriad Pro";
+  color: white;
+  text-transform: uppercase;
+  line-height: 2;
+  background: #ff8500;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .block-form-title {
+    font-size: 30px;
+  }
+  .label {
+    display: inline;
+    margin: 0 20px;
+  }
+  .form-button {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-button {
+    margin-left: 41px;
+  }
+  .input-style {
+    margin-left: 51px;
+  }
+}
+
+.Торговая_марка_Окна_КОРСА_предлагает_всем_клиен {
+  font-size: 16px;
+  font-family: "Calibri";
+  color: #0e3d6b;
+  line-height: 1.087;
+  text-align: left;
+  -moz-transform: matrix(1.03699, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(1.03699, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(1.03699, 0, 0, 1, 0, 0);
+  position: absolute;
+  left: 74.558px;
+  top: 211.953px;
+  width: 1138.883px;
+  height: 48.8px;
+  z-index: 11;
 }
 /*# sourceMappingURL=main.css.map */

@@ -19,7 +19,7 @@
   }
   .product-block-title {
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 36px;
     &::before {
       content:'';
       position: absolute;
@@ -27,7 +27,7 @@
       background-color:red;
       border-radius: 2px;
       height: 5px;
-      margin: 35px 0 0 20px;
+      margin: 28px 0 0 20px;
     }
   }
   .product-text {

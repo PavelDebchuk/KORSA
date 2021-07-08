@@ -1,0 +1,113 @@
+.window-title {
+    font-size: 24px;
+    font-family: "Calibri";
+    color: rgb(14, 61, 107);
+    text-transform: uppercase;
+    line-height: 0.725;
+    margin-bottom: 42px;
+  }
+  .window-item {
+    position: relative;
+  }
+  .window-img {
+      display: block;
+      margin: 0 auto;
+  }
+  .window-block {
+      font-size: 16px;
+      text-align: center;
+  }
+  .window-text {
+    .font-family:'Calibri';
+    color: rgb(14, 61, 107);
+    line-height: 1.087;
+    text-align: left;
+    margin-bottom: 80px;
+  }
+  .block-title {
+    font-family: "Myriad Pro";
+    color: rgb(4, 77, 145);
+    text-decoration: underline;
+    line-height: 1.087;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .disconts {
+    font-family: "Calibri";
+    color: rgb(102, 98, 98);
+    line-height: 1.087;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .line-silver {
+     text-decoration: line-through #bb3545;
+     font-weight: bold;
+  }
+
+  .span-orang {
+      color:#ff8500;
+      font-weight: bold;
+        font-size: 36px;
+        font-family: "Calibri";
+  }
+
+ .span-blue {
+     color:rgb(14, 61, 107);
+     font-weight: bold;
+ }
+  
+ .button-order {
+    font-size: 16px;
+    font-family: "KelsonSans";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    background:#4bbe3f;
+    padding:10px 42px;
+    margin-bottom: 70px;
+ }
+  
+    .block-econom {
+        border-radius: 10px;
+        background-color: rgb(255, 0, 0);
+        position: absolute;
+        font-size: 14px;
+        padding: 10px;
+        text-transform: uppercase;
+        font-family: "Roboto";
+        color: rgb(255, 255, 255);
+        line-height: 1.242;
+        text-align: center;
+        left: 75px;
+        top: -48px;
+    }
+
+    .span-bold {
+        font-weight: bold;
+    }
+  @media (min-width:768px) {
+      .window-list {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
+        .window-block {
+            max-width: 222px;
+        }
+        .block-econom {
+            left: -10px;
+        }
+        .button-order {
+            margin-bottom: 100px;
+        }
+    }
+
+    @media (min-width:1200px) {
+        .block-econom {
+            left: -42px;
+        }
+        .bot {
+            margin-bottom: 3px;
+        }
+    }

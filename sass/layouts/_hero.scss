@@ -1,12 +1,14 @@
 .hero {
   margin-top: 60px;
   .hero-title {
+    margin-bottom: 16px;
     font-size: 15px;
-      text-align: center;
-      color:#0e3d6b;
-      text-transform: uppercase;
+    text-align: center;
+    color:#0e3d6b;
+    text-transform: uppercase;
   }
   .hero-text {
+    font-family: "Calibri";
     text-align: center;
     font-size: 12px;
     color:#0e3d6b;
@@ -34,7 +36,9 @@
       font-size: 25px;
     }
     .hero-text {
-      font-size: 18px;
+      margin-top: 67px;
+      font-size: 16px;
     }
   }
 }
+
